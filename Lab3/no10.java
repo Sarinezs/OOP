@@ -1,6 +1,7 @@
+package Lab3;
 import java.util.Scanner ;
 
-public class test_10 {
+public class no10 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in) ;
         int N = sc.nextInt() ,M = sc.nextInt() ;

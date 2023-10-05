@@ -12,11 +12,11 @@ class MatrixMultiplication{
         }
     }
 
-    int[][] AxB(int[][] a, int[][] b){
+    double[][] AxB(double[][] a, double[][] b){
         int n = a.length;
         int m = b[1].length;
         int l = b.length;
-        int[][] c = new int[n][m];
+        double[][] c = new double[n][m];
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
                 int sum =0;
@@ -34,7 +34,7 @@ class MatrixMultiplication{
 public class l4n5 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int[][] a,b;
+        double[][] a,b;
         int n,m,x,y;
         MatrixMultiplication m1 = new MatrixMultiplication();
 
@@ -43,7 +43,7 @@ public class l4n5 {
 
         n = sc.nextInt();
         m = sc.nextInt();
-        a = new int[n][m];
+        a = new double[n][m];
         for(int i = 0; i< n; i++){
             for(int j =0 ; j< m; j++){
                 a[i][j] = sc.nextInt();
@@ -52,14 +52,14 @@ public class l4n5 {
         
         x = sc.nextInt();
         y = sc.nextInt();
-        b = new int[x][y];
+        b = new double[x][y];
         for(int i = 0; i< x; i++){
             for(int j =0 ;j < y; j++){
-                b[i][j] = sc.nextInt();
+                b[i][j] = sc.nextDouble();
             }
         }
 
-        int[][] ans = m1.AxB(a, b);
+        double[][] ans = m1.AxB(a, b);
 
         for(int i = 0; i< n; i++){
             for(int j =0 ;j < y; j++){

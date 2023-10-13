@@ -1,5 +1,8 @@
+import entity.test;
+
 public class main{
     public static void main(String[] args){
-        new MyFrame();
+        test a = new test();
+        a.print();
     }
 }
